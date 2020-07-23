@@ -17,8 +17,10 @@ MAGIC_KEYWORD = "poe"
 SNMP_AUTH = UsmUserData('poe-restarter-user', 'secret-password', None, cmdgen.usmHMACSHAAuthProtocol)
 
 # Or if you want to test without any authentication
-#credentials = hlapi.CommunityData('public')
+#SNMP_AUTH = hlapi.CommunityData('public')
 
+# This tool uses code from https://www.ictshore.com/sdn/python-snmp-tutorial/ written by Alessandro Maggio (2018),
+# licensed under MIT license.
 
 def construct_object_types(list_of_oids):
     object_types = []

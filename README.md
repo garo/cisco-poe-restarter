@@ -15,3 +15,7 @@ Usage
 
 Once the configuration has been set populate a list of switches into a .txt file, one ip (or hostname which resolvs to an ip) per line and then run the tool as "poe-restarter switches.txt". Other option is to pass a single ip from the command line: "poe-restarter 10.2.3.4"
 
+Tested on
+=========
+
+ - Cisco 9300 Catalyst
